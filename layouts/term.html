@@ -1,0 +1,7 @@
+{{ define "main" }}
+<h1 class="list-title">Posts tagged <span class="tag big">{{ .Title }}</span></h1>
+<div class="post-list">
+  {{ range .Pages.ByDate.Reverse }}{{ partial "post-card.html" . }}{{ end }}
+</div>
+{{ partial "tag-cloud.html" . }}
+{{ end }}

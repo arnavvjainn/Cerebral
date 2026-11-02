@@ -1,0 +1,33 @@
+baseURL = "http://localhost:1313/"
+locale = "en-US"
+title = "Cerebral"
+summaryLength = 40
+
+[params]
+  email = "a245jain@uwaterloo.ca"
+  author = "Arnav Jain"
+  tagline = "A blog by Arnav Jain"
+  description = "Thoughts on software, tools, and whatever else is rattling around."
+  github = "arnavvjainn"
+
+[permalinks.page]
+  blog = "/:slug/"
+
+[taxonomies]
+  tag = "tags"
+
+[menus]
+  [[menus.main]]
+    name = "About"
+    pageRef = "/"
+    weight = 1
+  [[menus.main]]
+    name = "Blog"
+    pageRef = "/blog"
+    weight = 2
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  noClasses = false

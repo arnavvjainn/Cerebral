@@ -1,0 +1,8 @@
+<section class="tag-cloud">
+  <h3>Tags</h3>
+  <ul>
+    {{ range site.Taxonomies.tags.ByCount }}
+      <li><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }} <span class="count">{{ .Count }}</span></a></li>
+    {{ end }}
+  </ul>
+</section>

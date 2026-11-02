@@ -1,0 +1,10 @@
+<article class="card">
+  <div class="card-meta">
+    {{ if .Params.pinned }}<span class="pin">📌 Pinned</span>{{ end }}
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+    {{ range .GetTerms "tags" }}<a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+  </div>
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <p class="excerpt">{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 220 }}{{ end }}</p>
+  <a class="read-more" href="{{ .RelPermalink }}">Read more →</a>
+</article>
