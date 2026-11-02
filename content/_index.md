@@ -28,4 +28,4 @@ I'm really into start-ups and how they get built. *Fall in Love with the Problem
 
 ## Get in touch
 
-Email me at [a245jain@uwaterloo.ca](mailto:a245jain@uwaterloo.ca), find my code on [GitHub](https://github.com/arnavvjainn), or follow along via [RSS](/index.xml).
+Email me at [a245jain@uwaterloo.ca](mailto:a245jain@uwaterloo.ca), find my code on [GitHub](https://github.com/arnavvjainn), or follow along via [RSS](index.xml).
