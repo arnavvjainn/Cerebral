@@ -36,13 +36,17 @@ Wait for the subagent's result. If **any test failed**, show the failures and as
 **Body:** exactly this shape:
 
 ```
+## What it does
 <One line describing what this PR does.>
 
-**Tests:** <subagent RESULT line>
-**Blast radius:** <subagent BLAST RADIUS line>
+### Tests
+<subagent RESULT line>
+
+### Blast radius
+<subagent BLAST RADIUS line>
 ```
 
-If the subagent reported `TESTED: no`, use `**Tests:** Not tested: <one-line reason>` and keep the blast radius line. That one line is the whole explanation; don't pad it.
+If the subagent reported `TESTED: no`, put `Not tested: <one-line reason>` under `### Tests` and keep the blast radius section. That one line is the whole explanation; don't pad it.
 
 If the session has attribution instructions for PR descriptions, append them after the body.
 
